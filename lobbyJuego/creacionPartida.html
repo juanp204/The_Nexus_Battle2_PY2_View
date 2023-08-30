@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobby de salas</title>
+    <link rel="stylesheet" href="./css/creacionPartida.CSS">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="body-wallpaper">
+        <div class="container">
+            <div class="regresar">
+                <a href="./lobbyJuegos.html"><img src="./img/flecha_izquierda.png" alt="regresar"></a>
+            </div>
+            <div class="e-commerce">
+                <div class="notification icon"><img src="./img/campana_notification.png" alt="campana"></div>
+                <div class="cart icon"><img src="./img/carrito_compras.png" alt="carritoCompras"></div>
+                <div class="monedas">
+                    <p>30000</p> <img src="./img/money.png" alt="money">
+                </div>
+            </div>
+
+            <div class="crearPartida">
+                <div class="nombre">
+                    <h1>Nombre de la sala</h1>
+                    <input type="text">
+                </div>
+                <div class="tamano">
+                    <h1>Tamano de la sala</h1>
+                    <select class="selectTamano" name="selectTamano">
+                        <option value="tamano2">2</option>
+                        <option value="tamano3">3</option>
+                        <option value="tamano4">4</option>
+                    </select>
+                </div>
+                <div class="modo">
+                    <h1>Modo de juego</h1>
+                    <select class="selectModo" name="selectModo">
+                        <option value="1v1" selected>1 vs 1</option>
+                        <option value="1vIA" >1 vs IA</option>
+                        <option value="3v">3 jugadores</option>
+                        <option value="3vIA">3 jugadores (1 IA)</option>
+                        <option value="3v2IA">3 jugadores (2 IA)</option>
+                        <option value="2v2">4 jugadores(2 vs 2)</option>
+                        <option value="4v">4 jugadores(todos vs todos)</option>
+                    </select>
+                </div>
+                <button class="btn"><a href="./salaJuego.html">Crear Sala</a></button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
